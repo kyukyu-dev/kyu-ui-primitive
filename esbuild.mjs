@@ -35,6 +35,8 @@ async function build(path) {
     external: [/@kyu-ui\/.+/],
   })
   console.log(`>> D.TS BUILT: ${path}/dist/index.d.ts`)
+
+  console.log(`>> BUILD END - ${path}`)
 }
 
 globSync('packages/*/*').forEach(build)
