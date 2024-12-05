@@ -1,0 +1,5 @@
+{
+  "name": "@types/custom-type-package",
+  "main": "./src/global.d.ts",
+  "types": "./src/global.d.ts"
+}

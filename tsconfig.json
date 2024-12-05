@@ -1,5 +1,5 @@
 {
-  "include": ["packages"],
+  "include": ["packages", "./jest-setup.ts", "custom-type-package"],
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -31,7 +31,6 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": true,
-    "target": "ES2022",
-    "typeRoots": ["./types"]
+    "target": "ES2022"
   }
 }

@@ -21,10 +21,10 @@ async function build(path) {
   console.log(`>> BUILD START - ${path}`)
 
   await esbuild.build(esbuildConfig)
-  console.log(`>> CJS BUILT: ${path}/dist/index.js`)
+  console.log(`>> CJS BUILT - ${path}/dist/index.js`)
 
   await esbuild.build({ ...esbuildConfig, format: 'esm', outExtension: { '.js': '.mjs' } })
-  console.log(`>> MJS BUILT: ${path}/dist/index.mjs`)
+  console.log(`>> MJS BUILT - ${path}/dist/index.mjs`)
 
   await tsup.build({
     entry: entryPoints,
@@ -34,7 +34,7 @@ async function build(path) {
     silent: true,
     external: [/@kyu-ui\/.+/],
   })
-  console.log(`>> D.TS BUILT: ${path}/dist/index.d.ts`)
+  console.log(`>> D.TS BUILT - ${path}/dist/index.d.ts`)
 
   console.log(`>> BUILD END - ${path}`)
 }
