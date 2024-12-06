@@ -1,2 +1,11 @@
-.yarn
-.yarnrc.yml
+.yarn/*
+
+.pnp.cjs
+.pnp.loader.mjs
+
+node_modules
+coverage
+dist
+esm
+out
+*.d.ts
