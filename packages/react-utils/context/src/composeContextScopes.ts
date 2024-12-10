@@ -3,7 +3,9 @@ import type { CreateScope } from './types'
 
 const composeContextScopes = (...scopes: CreateScope[]) => {
   const baseScope = scopes[0]
-  if (scopes.length === 1) return baseScope
+  if (scopes.length === 1) {
+    return baseScope
+  }
 
   const createScope: CreateScope = () => {
     const scopeHooks = scopes.map(createScope => ({

@@ -30,8 +30,12 @@ function createContextScope(scopeName: string, createContextScopeDeps: CreateSco
     function useContext(scope: Scope<ContextValueType | undefined>) {
       const Context = scope?.[rootComponentName]?.[index] || BaseContext
       const context = React.useContext(Context)
-      if (context) return context
-      if (defaultContext !== undefined) return defaultContext
+      if (context) {
+        return context
+      }
+      if (defaultContext !== undefined) {
+        return defaultContext
+      }
 
       throw new Error(`defaultContext가 없는 useContext는 \`${rootComponentName}.Provider\`내에서만 사용되어야합니다.`)
     }

@@ -8,4 +8,4 @@ function getDataState(checked: CheckedState) {
   return isIndeterminate(checked) ? 'indeterminate' : checked ? 'checked' : 'unchecked'
 }
 
-export { isIndeterminate, getDataState }
+export { getDataState, isIndeterminate }

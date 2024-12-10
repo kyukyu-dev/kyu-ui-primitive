@@ -24,8 +24,9 @@ const ELEMENT_NODES = [
 type ElementPropsWithRef<Element extends React.ElementType> = React.ComponentPropsWithRef<Element> & {
   asChild?: boolean
 }
-interface ForwardRefExoticElement<Element extends React.ElementType>
-  extends React.ForwardRefExoticComponent<ElementPropsWithRef<Element>> {}
+type ForwardRefExoticElement<Element extends React.ElementType> = React.ForwardRefExoticComponent<
+  ElementPropsWithRef<Element>
+>
 
 type Elements = { [Element in (typeof ELEMENT_NODES)[number]]: ForwardRefExoticElement<Element> }
 
@@ -47,7 +48,9 @@ const Element = ELEMENT_NODES.reduce((elements, node) => {
 }, {} as Elements)
 
 function dispatchDiscreteCustomEvent<Event extends CustomEvent>(target: Event['target'], event: Event) {
-  if (target) ReactDom.flushSync(() => target.dispatchEvent(event))
+  if (target) {
+    ReactDom.flushSync(() => target.dispatchEvent(event))
+  }
 }
 
 export { Element, dispatchDiscreteCustomEvent }

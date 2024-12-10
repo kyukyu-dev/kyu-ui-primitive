@@ -1,2 +1,2 @@
-export { Element, dispatchDiscreteCustomEvent } from './Element'
 export type { ElementPropsWithRef } from './Element'
+export { dispatchDiscreteCustomEvent, Element } from './Element'

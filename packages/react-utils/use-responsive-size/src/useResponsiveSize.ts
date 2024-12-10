@@ -1,5 +1,5 @@
-import React from 'react'
 import { useSafeLayoutEffect } from '@kyu-ui/react-utils-use-safe-layout-effect'
+import React from 'react'
 
 function useResponsiveSize(element: HTMLElement | null) {
   const [size, setSize] = React.useState<{ width: number; height: number } | null>(null)

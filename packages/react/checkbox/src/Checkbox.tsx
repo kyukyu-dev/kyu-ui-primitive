@@ -37,7 +37,7 @@ const Checkbox = React.forwardRef<CheckboxElement, ScopedProps<CheckboxProps>>((
   const composedRefs = useComposedRefs<HTMLButtonElement>(forwardedRef, node => setButton(node))
 
   // We set this to true by default so that events bubble to forms without JS (SSR)
-  const isFormControl = button ? form || !!button.closest('form') : true
+  const isFormControl = button ? form || Boolean(button.closest('form')) : true
   const [checked = false, setChecked] = useControllableState({
     prop: checkedProp,
     defaultProp: defaultChecked,
@@ -60,7 +60,9 @@ const Checkbox = React.forwardRef<CheckboxElement, ScopedProps<CheckboxProps>>((
     props.onKeyDown?.(e)
 
     // WAI ARIA에 따르면 체크박스는 엔터 KeyDown 이벤트를 발생시키지 않음.
-    if (e.key === 'Enter') e.preventDefault()
+    if (e.key === 'Enter') {
+      e.preventDefault()
+    }
   }
 
   const isInputEventBubbles = React.useRef(true)
@@ -74,7 +76,9 @@ const Checkbox = React.forwardRef<CheckboxElement, ScopedProps<CheckboxProps>>((
 
       // 체크박스가 form 안에 있을 때, button의 이벤트 전파는 막고 input의 이벤트만 전파되도록 하여
       // native form validation이 동작하고 form event들이 체크박스의 업데이트를 반영하도록 함.
-      if (!e.isPropagationStopped()) e.stopPropagation()
+      if (!e.isPropagationStopped()) {
+        e.stopPropagation()
+      }
     }
   }
 

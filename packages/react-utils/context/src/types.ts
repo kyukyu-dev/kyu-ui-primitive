@@ -1,4 +1,4 @@
-type Scope<C = any> = { [scopeName: string]: React.Context<C>[] } | undefined
+type Scope<C = any> = { [scopeName: string]: Array<React.Context<C>> } | undefined
 
 type ScopeHook = (scope: Scope) => { [__scopeProp: string]: Scope }
 
@@ -7,4 +7,4 @@ interface CreateScope {
   (): ScopeHook
 }
 
-export type { Scope, ScopeHook, CreateScope }
+export type { CreateScope, Scope, ScopeHook }

@@ -1,6 +1,6 @@
+import { useSafeLayoutEffect } from '@kyu-ui/react-utils-use-safe-layout-effect'
 import React from 'react'
 import { useStateMachine } from './useStateMachine'
-import { useSafeLayoutEffect } from '@kyu-ui/react-utils-use-safe-layout-effect'
 
 function usePresence(present: boolean) {
   const [node, setNode] = React.useState<HTMLElement>()
@@ -104,7 +104,9 @@ function usePresence(present: boolean) {
   return {
     isPresent: ['mounted', 'unmountSuspended'].includes(state),
     ref: React.useCallback((node: HTMLElement) => {
-      if (node) stylesRef.current = getComputedStyle(node)
+      if (node) {
+        stylesRef.current = getComputedStyle(node)
+      }
       setNode(node)
     }, []),
   }

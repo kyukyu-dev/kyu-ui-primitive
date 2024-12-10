@@ -118,7 +118,7 @@ export default [
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/naming-convention': [
         'error',
-        { format: ['camelCase', 'UPPER_CASE', 'PascalCase'], selector: 'variable', leadingUnderscore: 'allow' },
+        { format: ['camelCase', 'UPPER_CASE', 'PascalCase'], selector: 'variable', leadingUnderscore: 'allowDouble' },
         { format: ['camelCase', 'PascalCase'], selector: 'function' },
         { format: ['PascalCase'], selector: 'interface' },
         { format: ['PascalCase'], selector: 'typeAlias' },

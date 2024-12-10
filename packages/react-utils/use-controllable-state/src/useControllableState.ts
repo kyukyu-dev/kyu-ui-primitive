@@ -1,5 +1,5 @@
-import React from 'react'
 import { useCallbackHandlerRef } from '@kyu-ui/react-utils-use-callback-handler-ref'
+import React from 'react'
 
 type UseControllableStateParams<T> = {
   prop?: T
@@ -23,10 +23,14 @@ function useControllableState<T>({ prop, defaultProp, onChange = () => {} }: Use
     setValueParam => {
       const nextValue = typeof setValueParam === 'function' ? (setValueParam as SetStateFn<T>)(prop) : setValueParam
 
-      if (nextValue === undefined) throw new Error(HANDLER_RECIEVED_UNDEFINED_ERROR)
+      if (nextValue === undefined) {
+        throw new Error(HANDLER_RECIEVED_UNDEFINED_ERROR)
+      }
 
       const isValueChanged = nextValue !== prop
-      if (isValueChanged) handleChange(nextValue)
+      if (isValueChanged) {
+        handleChange(nextValue)
+      }
     },
     [prop, handleChange]
   )
@@ -50,7 +54,9 @@ function useUncontrolledState<T>({ defaultProp, onChange }: UseUncontrolledState
     const isValueChanged = value !== prevValueRef.current
 
     if (isValueChanged) {
-      if (value === undefined) throw new Error(HANDLER_RECIEVED_UNDEFINED_ERROR)
+      if (value === undefined) {
+        throw new Error(HANDLER_RECIEVED_UNDEFINED_ERROR)
+      }
 
       handleChange(value)
       prevValueRef.current = value

@@ -10,11 +10,7 @@ function createContext<ContextValueType extends object | null>(
 
   const Provider: ProviderType<ContextValueType> = props => {
     const { children, ...context } = props
-    const value = React.useMemo(
-      () => context,
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      Object.values(context)
-    ) as ContextValueType
+    const value = React.useMemo(() => context, Object.values(context)) as ContextValueType
 
     return <Context.Provider value={value}>{children}</Context.Provider>
   }
@@ -22,8 +18,12 @@ function createContext<ContextValueType extends object | null>(
 
   function useContext() {
     const context = React.useContext(Context)
-    if (context) return context
-    if (defaultContext !== undefined) return defaultContext
+    if (context) {
+      return context
+    }
+    if (defaultContext !== undefined) {
+      return defaultContext
+    }
 
     throw new Error(`defaultContext가 없는 useContext는 \`${rootComponentName}.Provider\`내에서만 사용되어야합니다.`)
   }

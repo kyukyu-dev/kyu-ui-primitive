@@ -26,7 +26,7 @@ describe('기본 체크박스 생성', () => {
 
   describe('체크박스를 클릭하면', () => {
     beforeEach(async () => {
-      ;-fireEvent.click(checkbox)
+      fireEvent.click(checkbox)
       indicator = rendered.queryByTestId(INDICATOR_TEST_ID)
     })
 
