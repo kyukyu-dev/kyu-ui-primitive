@@ -1,6 +1,0 @@
-export type { CheckboxProps } from './Checkbox'
-export { Checkbox, Root } from './Checkbox'
-export { createCheckboxScope } from './CheckboxContext'
-export type { CheckboxIndicatorProps } from './CheckboxIndicator'
-export { CheckboxIndicator, Indicator } from './CheckboxIndicator'
-export type { CheckedState } from './types'

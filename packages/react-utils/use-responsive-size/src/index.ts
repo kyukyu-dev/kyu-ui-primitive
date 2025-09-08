@@ -1,1 +1,0 @@
-export { useResponsiveSize } from './useResponsiveSize'

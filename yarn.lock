@@ -990,311 +990,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kyu-ui/react-checkbox@workspace:packages/react/checkbox":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-checkbox@workspace:packages/react/checkbox"
-  dependencies:
-    "@kyu-ui/react-element": "workspace:^"
-    "@kyu-ui/react-presence": "workspace:^"
-    "@kyu-ui/react-utils-compose-refs": "workspace:^"
-    "@kyu-ui/react-utils-context": "workspace:^"
-    "@kyu-ui/react-utils-use-controllable-state": "workspace:^"
-    "@kyu-ui/react-utils-use-prev-state": "workspace:^"
-    "@kyu-ui/react-utils-use-responsive-size": "workspace:^"
-    "@testing-library/dom": "npm:*"
-    "@testing-library/react": "npm:*"
-    "@types/jest-axe": "npm:*"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    jest-axe: "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-dialog@workspace:packages/react/dialog":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-dialog@workspace:packages/react/dialog"
-  dependencies:
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-dismissable-layer@workspace:packages/react/dismissable-layer":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-dismissable-layer@workspace:packages/react/dismissable-layer"
-  dependencies:
-    "@kyu-ui/react-element": "workspace:^"
-    "@kyu-ui/react-utils-compose-refs": "workspace:^"
-    "@kyu-ui/react-utils-use-callback-handler-ref": "workspace:^"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-element@workspace:^, @kyu-ui/react-element@workspace:packages/react/element":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-element@workspace:packages/react/element"
-  dependencies:
-    "@kyu-ui/react-slot": "workspace:^"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-presence@workspace:^, @kyu-ui/react-presence@workspace:packages/react/presence":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-presence@workspace:packages/react/presence"
-  dependencies:
-    "@kyu-ui/react-utils-compose-refs": "workspace:^"
-    "@kyu-ui/react-utils-get-element-ref": "workspace:^"
-    "@kyu-ui/react-utils-use-safe-layout-effect": "workspace:^"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-safe-portal@workspace:packages/react/portal":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-safe-portal@workspace:packages/react/portal"
-  dependencies:
-    "@kyu-ui/react-element": "workspace:^"
-    "@kyu-ui/react-utils-use-safe-layout-effect": "workspace:^"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    react: "npm:*"
-    react-dom: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-slot@workspace:^, @kyu-ui/react-slot@workspace:packages/react/slot":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-slot@workspace:packages/react/slot"
-  dependencies:
-    "@kyu-ui/react-utils-compose-refs": "workspace:^"
-    "@kyu-ui/react-utils-get-element-ref": "workspace:^"
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-compose-refs@workspace:^, @kyu-ui/react-utils-compose-refs@workspace:packages/react-utils/compose-refs":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-compose-refs@workspace:packages/react-utils/compose-refs"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-context@workspace:^, @kyu-ui/react-utils-context@workspace:packages/react-utils/context":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-context@workspace:packages/react-utils/context"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-get-element-ref@workspace:^, @kyu-ui/react-utils-get-element-ref@workspace:packages/react-utils/get-element-ref":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-get-element-ref@workspace:packages/react-utils/get-element-ref"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-use-callback-handler-ref@workspace:^, @kyu-ui/react-utils-use-callback-handler-ref@workspace:packages/react-utils/use-callback-handler-ref":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-use-callback-handler-ref@workspace:packages/react-utils/use-callback-handler-ref"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-use-controllable-state@workspace:^, @kyu-ui/react-utils-use-controllable-state@workspace:packages/react-utils/use-controllable-state":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-use-controllable-state@workspace:packages/react-utils/use-controllable-state"
-  dependencies:
-    "@kyu-ui/react-utils-use-callback-handler-ref": "workspace:^"
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-use-prev-state@workspace:^, @kyu-ui/react-utils-use-prev-state@workspace:packages/react-utils/use-prev-state":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-use-prev-state@workspace:packages/react-utils/use-prev-state"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-use-responsive-size@workspace:^, @kyu-ui/react-utils-use-responsive-size@workspace:packages/react-utils/use-responsive-size":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-use-responsive-size@workspace:packages/react-utils/use-responsive-size"
-  dependencies:
-    "@kyu-ui/react-utils-use-safe-layout-effect": "workspace:^"
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/react-utils-use-safe-layout-effect@workspace:^, @kyu-ui/react-utils-use-safe-layout-effect@workspace:packages/react-utils/use-safe-layout-effect":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/react-utils-use-safe-layout-effect@workspace:packages/react-utils/use-safe-layout-effect"
-  dependencies:
-    "@types/react": "npm:*"
-    react: "npm:*"
-    tslib: "npm:*"
-  peerDependencies:
-    "@types/react": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@kyu-ui/utils-compose-event-handlers@workspace:packages/utils/compose-event-handlers":
-  version: 0.0.0-use.local
-  resolution: "@kyu-ui/utils-compose-event-handlers@workspace:packages/utils/compose-event-handlers"
-  languageName: unknown
-  linkType: soft
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1509,7 +1204,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:*, @testing-library/dom@npm:^10.4.0":
+"@testing-library/dom@npm:^10.4.0":
   version: 10.4.0
   resolution: "@testing-library/dom@npm:10.4.0"
   dependencies:
@@ -1540,7 +1235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:*, @testing-library/react@npm:^16.0.1":
+"@testing-library/react@npm:^16.0.1":
   version: 16.0.1
   resolution: "@testing-library/react@npm:16.0.1"
   dependencies:
@@ -1656,7 +1351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest-axe@npm:*, @types/jest-axe@npm:^3.5.9":
+"@types/jest-axe@npm:^3.5.9":
   version: 3.5.9
   resolution: "@types/jest-axe@npm:3.5.9"
   dependencies:
@@ -1710,7 +1405,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:*, @types/react-dom@npm:^18":
+"@types/react-dom@npm:^18":
   version: 18.3.1
   resolution: "@types/react-dom@npm:18.3.1"
   dependencies:
@@ -4465,7 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-axe@npm:*, jest-axe@npm:^9.0.0":
+"jest-axe@npm:^9.0.0":
   version: 9.0.0
   resolution: "jest-axe@npm:9.0.0"
   dependencies:
@@ -6040,7 +5735,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:*, react-dom@npm:^18.3.1":
+"react-dom@npm:^18.3.1":
   version: 18.3.1
   resolution: "react-dom@npm:18.3.1"
   dependencies:
@@ -6073,7 +5768,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:*, react@npm:^18.3.1":
+"react@npm:^18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
@@ -6944,7 +6639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:*, tslib@npm:^2.6.2, tslib@npm:^2.8.1":
+"tslib@npm:^2.6.2, tslib@npm:^2.8.1":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62

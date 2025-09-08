@@ -6,8 +6,9 @@
   "private": true,
   "packageManager": "yarn@4.5.1",
   "workspaces": [
-    "packages/*/*",
-    "custom-type-package/*"
+    "apps/*",
+    "internal/*",
+    "packages/*/*"
   ],
   "devDependencies": {
     "@eslint/js": "^9.16.0",
