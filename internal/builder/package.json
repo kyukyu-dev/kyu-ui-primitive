@@ -1,0 +1,23 @@
+{
+  "name": "@kyui/builder",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./builder.js",
+  "exports": {
+    ".": "./builder.js"
+  },
+  "bin": {
+    "kyui-build": "./kyui-build.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.9",
+    "tsup": "^8.5.0"
+  },
+  "devDependencies": {
+    "@kyui/eslint-config": "workspace:^",
+    "@kyui/typescript-config": "workspace:^",
+    "eslint": "^9.35.0"
+  }
+}

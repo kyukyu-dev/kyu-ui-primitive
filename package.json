@@ -4,12 +4,7 @@
   "author": "kyukyu-dev",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@4.9.4",
-  "workspaces": [
-    "apps/*",
-    "internal/*",
-    "packages/*/*"
-  ],
+  "packageManager": "pnpm@10.2.0",
   "devDependencies": {
     "@chance/eslint": "^1.1.0",
     "@testing-library/dom": "^10.4.0",
@@ -40,9 +35,9 @@
     "singleQuote": true
   },
   "scripts": {
-    "build": "yarn workspaces foreach -pt --from './packages/**/*' run build",
-    "lint": "yarn workspaces foreach -pt run lint",
-    "types:check": "tsc --skipLibCheck --noEmit",
+    "build": "pnpm -r --parallel --filter \"./packages/**/*\" run build",
+    "lint": "pnpm -r run lint",
+    "types:check": "pnpm -r --parallel run typecheck",
     "test": "vitest",
     "format": "prettier --write ."
   }
