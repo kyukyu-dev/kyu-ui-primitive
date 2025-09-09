@@ -16,8 +16,8 @@
     "tsup": "^8.5.0"
   },
   "devDependencies": {
-    "@kyui/eslint-config": "workspace:^",
-    "@kyui/typescript-config": "workspace:^",
+    "@kyui/eslint-config": "workspace:*",
+    "@kyui/typescript-config": "workspace:*",
     "eslint": "^9.35.0"
   }
 }
