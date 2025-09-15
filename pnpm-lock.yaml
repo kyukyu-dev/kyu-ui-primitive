@@ -393,6 +393,36 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
+  packages/react/use-callback-ref:
+    devDependencies:
+      '@kyui/builder':
+        specifier: workspace:*
+        version: link:../../../internal/builder
+      '@kyui/eslint-config':
+        specifier: workspace:*
+        version: link:../../../internal/eslint-config
+      '@kyui/typescript-config':
+        specifier: workspace:*
+        version: link:../../../internal/typescript-config
+      '@types/react':
+        specifier: ^19.1.12
+        version: 19.1.12
+      '@types/react-dom':
+        specifier: ^19.1.9
+        version: 19.1.9(@types/react@19.1.12)
+      eslint:
+        specifier: ^9.35.0
+        version: 9.35.0
+      react:
+        specifier: ^19.1.1
+        version: 19.1.1
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
   packages/react/use-controllable-state:
     dependencies:
       '@kyui/react-use-effect-event':

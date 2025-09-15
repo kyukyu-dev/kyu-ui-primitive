@@ -1,0 +1,55 @@
+{
+  "name": "@kyui/react-use-callback-ref",
+  "version": "0.0.0",
+  "license": "MIT",
+  "source": "./src/index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist.index.d.ts",
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./dist/index.d.mts",
+          "default": "./dist/index.mjs"
+        },
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        }
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint --max-warnings 0 src",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "build": "kyui-build"
+  },
+  "devDependencies": {
+    "@kyui/builder": "workspace:*",
+    "@kyui/eslint-config": "workspace:*",
+    "@kyui/typescript-config": "workspace:*",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.35.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "5.7.3"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  }
+}

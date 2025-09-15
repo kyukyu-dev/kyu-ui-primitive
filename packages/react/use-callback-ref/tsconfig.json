@@ -1,0 +1,9 @@
+{
+  "extends": "@kyui/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "types": ["@kyui/typescript-config/react-library"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
