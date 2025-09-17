@@ -127,6 +127,24 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
+  packages/core/rect:
+    devDependencies:
+      '@kyui/builder':
+        specifier: workspace:*
+        version: link:../../../internal/builder
+      '@kyui/eslint-config':
+        specifier: workspace:*
+        version: link:../../../internal/eslint-config
+      '@kyui/typescript-config':
+        specifier: workspace:*
+        version: link:../../../internal/typescript-config
+      eslint:
+        specifier: ^9.35.0
+        version: 9.35.0
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
   packages/react/compose-refs:
     devDependencies:
       '@kyui/builder':
